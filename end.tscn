@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://djyf28ccff0st"]
+
+[ext_resource type="Texture2D" uid="uid://bpasrnnm514qs" path="res://Pixel Adventure/Pixel Adventure/Assets/Items/Checkpoints/End/End (Idle).png" id="1_n735c"]
+
+[sub_resource type="Theme" id="Theme_h8txo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_x3ldl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x3ldl"]
+size = Vector2(46, 44)
+
+[node name="Trophy" type="Area2D" unique_id=390623599]
+
+[node name="End(idle)" type="Sprite2D" parent="." unique_id=1049479577]
+position = Vector2(-1, -5)
+texture = ExtResource("1_n735c")
+
+[node name="Label" type="Label" parent="." unique_id=966381392]
+offset_left = -74.0
+offset_top = -41.0
+offset_right = 74.0
+offset_bottom = -18.0
+theme = SubResource("Theme_h8txo")
+text = "Tower Complete!"
+label_settings = SubResource("LabelSettings_x3ldl")
+uppercase = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=336030110]
+position = Vector2(-1, 5)
+shape = SubResource("RectangleShape2D_x3ldl")
+
+[node name="Control" type="Control" parent="." unique_id=900758502]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
